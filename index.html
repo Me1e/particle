@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Particle.js proj</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+      body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: dodgerblue;
+      }
+      #particles-js {
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+      }
+      h1 {
+        z-index: 1;
+        position: absolute;
+        font-size: 6vw;
+        font-family: "Press Start 2P";
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Particle.js<br />
+      Example
+    </h1>
+    <div id="particles-js"></div>
+    <script src="particles.js"></script>
+    <script>
+      particlesJS.load("particles-js", "particles.json");
+    </script>
+  </body>
+</html>
